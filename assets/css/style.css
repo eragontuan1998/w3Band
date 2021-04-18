@@ -25,6 +25,7 @@ html{
     left: 0;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 #nav{
     display: inline-block;
@@ -92,9 +93,29 @@ html{
 }
 #slider {
     margin-top: 46px;
-    background-color: green;
-    height:400px;
-}   
+    padding-top: 50%;
+    position: relative;
+    background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat ;
+}  
+#slider .text-contain{
+    position: absolute;
+    bottom: 47px;
+    color:white;
+    /* left:50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    right: 0;
+    left: 0;
+} 
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0;
+}
+#slider .text-description{
+    font-size: 15px;
+    margin: 15px 0;
+}
 #content {
 
 }
