@@ -14,6 +14,10 @@ html{
 3. Màu sắc (color)
 4. Kiểu dáng (kiểu chữ, hình tròn, vuông,...)
 */
+.clear{
+    clear: both;
+}
+
 #main {
 
 }
@@ -149,6 +153,24 @@ html{
     line-height: 1.4;
     text-align: justify;
 }
+#content .member-list{
+    margin-top: 48px;
+    /* overflow: hidden; */
+}
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+   text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5px;
+}
+
 #footer {
 
 }
