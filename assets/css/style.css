@@ -173,8 +173,9 @@ html{
     width: 154px;
     border-radius: 5px;
 }
-.tour-section{
-    background-color: #000;
+ 
+#content .tour-section{
+     background-color: #000;
 }
 .ticket-list{
     background-color: #fff;
@@ -206,6 +207,51 @@ html{
     margin-top: -3px;
     float: right;
     background-color: #000;
+}
+.places-list{
+    margin : 32px -8px 0;
+    
+}
+.place-item{
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%; 
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6 ;
+}
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px ;
+    color:#757575;
+}
+.place-desc{
+    margin-top: 15px ;
+    line-height: 1.4;
+}
+.place-buy-btn{
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    background-color: #000;
+    color:#fff;
+    margin-top: 15px;
+}
+.place-buy-btn:hover{
+    color:#000;
+    background-color: #ccc;
 }
 #footer {
 
