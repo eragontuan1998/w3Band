@@ -23,6 +23,9 @@ html{
 .text-center{
     text-align: center !important;
 }
+.pull-right{
+    float: right !important;
+}
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -51,6 +54,15 @@ html{
 }
 .mt-16{
     margin-top: 16px !important;
+}
+.btn{
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    background-color: #000;
+    color:#fff;
+    margin-top: 15px;
+    border: none;
 }
 #main {
 
@@ -162,7 +174,7 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 #content .section-heading,
 #content .class-sub-heading{
@@ -264,17 +276,11 @@ html{
     margin-top: 15px ;
     line-height: 1.4;
 }
-.place-buy-btn{
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    background-color: #000;
-    color:#fff;
-    margin-top: 15px;
-}
-.place-buy-btn:hover{
+
+.btn:hover{
     color:#000;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 /*
@@ -299,17 +305,30 @@ html{
     border: 1px solid #ccc;
     width: 100%;
 }
-.contact-form .form-submit-btn{
-    background-color: #000;
-    color:#fff;
-    /* height: 74px;
-    width:38px; */
-    padding: 8px 16px;
-    border: 1px solid #000;
-    float: right;
-     
+/* Map section*/
+.map-section{
+    width: 100;
 }
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
- 
+#footer .socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    text-decoration:  none;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
