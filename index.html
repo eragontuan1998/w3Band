@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>The band</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
-    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16"> 
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
 </head>
 
 <body>
@@ -29,9 +30,15 @@
                     </ul>
                 </li>
             </ul>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+
         </div>
         <div id="slider">
             <div class="text-contain">
@@ -110,7 +117,7 @@
                                 <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -135,11 +142,12 @@
                                 <div class="col col-half">
                                     <input type="email" name="" placeholder="Email" id="" class="form-control" required>
                                 </div>
-                         
+
                             </div>
                             <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input type="text" name="" placeholder="Message" id="" class="form-control" required>
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control"
+                                        required>
                                 </div>
                             </div>
                             <input class="btn mt-16 pull-right" type="submit" value="SEND">
@@ -147,10 +155,10 @@
                     </div>
                 </div>
             </div>
-             <!-- Eng: Contact section -->
-             <div class="map-section">
-                 <img src="./assets/img/map.jpg" alt="Map">
-             </div>
+            <!-- Eng: Contact section -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
         </div>
 
         <div id="footer">
@@ -165,6 +173,29 @@
             <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMe = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // console.log(header)
+        mobileMe.onclick = function () {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll("#nav li a[href*='#']");
+        for(var i = 0;i<menuItems.length;i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick=function(){
+                header.style.height = null;
+            }
+        }
+    </script>
 </body>
 
 </html>
