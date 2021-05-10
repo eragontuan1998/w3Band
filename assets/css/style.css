@@ -56,6 +56,9 @@ html{
 .mt-16{
     margin-top: 16px !important;
 }
+.mt-32{
+    margin-top: 32px !important;
+}
 .btn{
     text-decoration: none;
     padding: 11px 16px;
@@ -64,6 +67,7 @@ html{
     color:#fff;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 #main {
 
